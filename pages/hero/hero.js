@@ -1,4 +1,4 @@
-import heroStyle from '/styles/Hero.module.css'
+import heroStyle from '../styles/Hero.module.css'
 const Hero = ()=>{
 return(
     <header className={heroStyle.hero}>

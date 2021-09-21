@@ -5,11 +5,11 @@ import productStyles from './/styles/Products.module.css'
 
  export async function getStaticProps(){
      const client = createClient ({
-      space:`wyaorns2fubd`,
-      accessToken:`BQWAYX7Yo5qaimPRd0wtxHCK24GMA0hkf8MDXZFfgf8`,
+      space:process.env.SPACE_ID,
+      accessToken:process.env.ACCESS_KEY, 
      })
  
-     const res = await client.getEntries({content_type: "products"})
+     const res =await client.getEntries({content_type: "products"})
 
      return{
         props:{

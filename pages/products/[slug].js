@@ -1,6 +1,6 @@
 import { createClient } from 'contentful'
 import Image from 'next/image'
-import Review from '../../reviews/reviews'
+import Review from '../reviews/reviews'
 
 const client = createClient({
     space:process.env.SPACE_ID,

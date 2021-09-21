@@ -3,11 +3,10 @@ import ProductCard from "./components/productCard"
 import Hero from './hero/hero'
 import productStyles from './/styles/Products.module.css'
 
-
  export async function getStaticProps(){
      const client = createClient ({
-         space:process.env.SPACE_ID,
-         accessToken:process.env.ACCESS_KEY,
+         space:"wyaorns2fubd",
+         accessToken:"BQWAYX7Yo5qaimPRd0wtxHCK24GMA0hkf8MDXZFfgf8",
      })
  
      const res = await client.getEntries({content_type: "products"})
@@ -29,6 +28,7 @@ export default function Home ({products}){
   <section className={productStyles.products} >
         <div className={productStyles.section_title}>
           <h2 id="products">Our products</h2>
+        
         </div>
         <div className={productStyles.products_center}>
           {products.map(product =>(

@@ -6,8 +6,7 @@ import productStyles from './/styles/Products.module.css'
  export async function getStaticProps(){
      const client = createClient ({
       space:process.env.SPACE_ID,
-      accessToken:process.env.ACCESS_KEY, 
-     })
+      accessToken:process.env.ACCESS_KEY, })
  
      const res =await client.getEntries({content_type: "products"})
 
@@ -18,8 +17,7 @@ import productStyles from './/styles/Products.module.css'
      }
     }
 export default function Home ({products}){
-  
-
+console.log()
  return (
     <>
   

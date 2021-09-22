@@ -17,7 +17,7 @@ import productStyles from './/styles/Products.module.css'
      }
     }
 export default function Home ({products}){
-console.log()
+console.log(process.env.ACCESS_KEY)
  return (
     <>
   
